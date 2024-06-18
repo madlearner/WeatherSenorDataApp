@@ -77,6 +77,7 @@ GET /v1/sensor_data?sensor_ids=sensor_123,sensor_456&start_date=2023-01-01T00:00
 
 ## Example Response:
 
+<<<<<<< HEAD
 ```json
 {
   "sensor_data": [
@@ -150,3 +151,9 @@ The project includes unit tests written using Python's `unittest` module and the
 ```bash
 pytest
 ```
+=======
+## Future Scope
+We can add the token and admin,  in the current code it's the commented part.
+It will be helpful for authentication and accessing the API.
+`app\dependencies.py` contains token and secret which can be used (or replaced the values) for the future scope
+>>>>>>> 580b753608b46099d138c91a39f4f7c789e70c0e
