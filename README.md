@@ -145,10 +145,10 @@ The API documentation is available at [http://127.0.0.1:8000/docs](http://127.0.
 
 ## Testing
 
-The project includes unit tests written using Python's `unittest` module and the `pytest` library. To run the tests, execute the following command:
+The project includes unit tests written using Python's `unittest` module and the `pytest` library. To run the tests, change directory to app, and execute the following command:
 
 ```bash
-pytest
+pytest tests
 ```
 ## Future Scope
 We can add the token and admin,  in the current code it's the commented part.
