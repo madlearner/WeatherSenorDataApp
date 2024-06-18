@@ -55,6 +55,3 @@ The project includes unit tests written using Python's `unittest` module and the
 We can add the token and admin,  in the current code it's the commented part.
 It will be helpful for authentication and accessing the API.
 `app\dependencies.py` contains token and secret which can be used (or replaced the values) for the future scope
-
-## Additional 
-Please find the video of the working of API (test)
