@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Query, HTTPException, Depends
+from fastapi import Query, HTTPException
 from datetime import timedelta
 from sqlalchemy import func
 from ..models.sensor import SensorData

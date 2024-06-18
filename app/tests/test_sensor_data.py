@@ -6,7 +6,6 @@ from unittest.mock import patch, MagicMock
 from fastapi.testclient import TestClient
 from fastapi import status
 from app.routers.sensor_data import router
-from app.schemas.sensor_data_request import SensorDataRequest
 
 @pytest.fixture
 def client():

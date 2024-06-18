@@ -1,4 +1,3 @@
-from pydantic import Field
 from sqlalchemy import Column, Integer, String, Float, DateTime
 from datetime import datetime
 from ..database import Base
