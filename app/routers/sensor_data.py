@@ -49,7 +49,7 @@ async def query_data(
     sensor_ids: List[str] = Query(None),
     start_date: Optional[datetime] = Query(None),
     end_date: Optional[datetime] = Query(None),
-    statistics: Optional[List[str]] = Query(None),
+    statistics: List[str] = Query(None),
     metrics: List[str] = Query(None)
 ):
     try:
