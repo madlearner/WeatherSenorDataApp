@@ -20,7 +20,7 @@ router = APIRouter(prefix="/v1")
 db_dependency = Annotated[Session, Depends(get_db)]
 
 
-@router.post("/sensor_data")
+@router.post("/sensor_data", tags=['Insert Sensor data'])
 async def add_sensor_data(data: SensorDataRequest, db: db_dependency):
     # Validate data
     try:
@@ -43,7 +43,7 @@ async def add_sensor_data(data: SensorDataRequest, db: db_dependency):
         raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
 
 
-@router.get("/sensor_data")
+@router.get("/sensor_data", tags=['Get Sensor data'])
 async def query_data(
     db: db_dependency,
     sensor_ids: List[str] = Query(None),
